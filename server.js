@@ -206,7 +206,7 @@ app.get('/team_stats', function(req, res) {
   }).then(data => {
       console.dir(data);
       res.render('pages/team_stats', {
-        title: 'Team Stats',
+        my_title: 'Team Stats',
         numWins: data[0][0].count,
         numLosses: data[1][0].count,
         data: data[2]
